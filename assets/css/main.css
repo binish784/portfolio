@@ -3268,4 +3268,46 @@ input, select, textarea {
 	#header b {
 		color:#c5c4c4;
 	}
+
+
+	.clearfix:after{
+		clear: both;
+		content: "";
+		display:table;
+	}
+
+	.customNav{
+		margin-top: 30px;
+	}
+
+	.customNav ul{
+		list-style-type: none;
+	}
 	
+	.customNav ul li a{
+		color: rgb(184, 184, 184);
+		text-decoration:line-through ;
+		text-decoration: none;
+	}
+
+
+	@media screen and (max-width: 980px){
+		.customNav {
+			text-align: center;
+		}
+
+		.customNav ul li{
+			display: inline-block;
+		}
+	}
+
+	
+	@media screen and (max-width:420px){
+		.customNav ul li {
+			display: block;
+		}
+	}
+
+#body{
+	overflow-x: hidden;
+}
